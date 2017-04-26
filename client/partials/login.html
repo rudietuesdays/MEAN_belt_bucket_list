@@ -1,0 +1,8 @@
+<div ng-controller="loginController">
+	<h1>Bucket Lists</h1>
+	<form ng-submit="loginUser()">
+		<label>Name: </label><input type="text" ng-model="user.name" required>
+		<input type="submit" value="Enter">
+		<p>{{login_error}}</p>
+	</form>
+</div>

@@ -1,0 +1,24 @@
+<div ng-controller="showUserController">
+  <header>
+		Bucket List |
+		<a href="#!/dashboard">Home</a> |
+		<a href="" ng-click="logoutUser()">Logout</a>
+	</header>
+  <h1>{{user.name}}'s Bucket List</h1>
+  <h3>Done</h3>
+  <p ng-repeat="item in items" ng-show="{{item.checked}}">
+    <input name="checkItem" type="checkbox" ng-checked="item.checked" ng-click="updateItem(item._id)" ng-disabled="{{notUser}}" ng-click="updateItem(item._id)">
+    {{item._user.name}} |
+    {{item.title}} -
+    {{item.description}}... -
+    {{item.createdAt | date: "MMMM d, yyyy" }}
+  </p>
+  <h3>Pending</h3>
+  <p ng-repeat="item in items" ng-show="!{{item.checked}}">
+    <input name="checkItem" type="checkbox" ng-checked="item.checked" ng-click="updateItem(item._id)" ng-disabled="{{notUser}}" ng-click="updateItem(item._id)">
+    {{item._user.name}} |
+    {{item.title}} -
+    {{item.description}}... -
+    {{item.createdAt | date: "MMMM d, yyyy" }}
+  </p>
+</div>

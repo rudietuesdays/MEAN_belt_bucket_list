@@ -1,0 +1,3 @@
+** Full stack MEAN exam **
+
+BE SURE TO NPM INSTALL and BOWER INSTALL
