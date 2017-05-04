@@ -1,8 +1,13 @@
-<div ng-controller="loginController">
+<div ng-controller="loginController" class="icon-block row">
 	<h1>Bucket Lists</h1>
-	<form ng-submit="loginUser()">
-		<label>Name: </label><input type="text" ng-model="user.name" required>
-		<input type="submit" value="Enter">
-		<p>{{login_error}}</p>
+	<form ng-submit="loginUser()" class="col s12">
+		<div class="input-field col s6">
+			<input type="text" ng-model="user.name" placeholder="Name" required>
+			<br>
+			{{login_error}}
+		</div>
+		<div class="input-field col s12  blue-grey-text darken-4">
+			<input type="submit" value="Enter">
+		</div>
 	</form>
 </div>

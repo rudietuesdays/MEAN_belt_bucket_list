@@ -1,0 +1,28 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.colorize {
+  color: white;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0097a7+0,e0f7fa+100 */
+  background: #0097a7; /* Old browsers */
+  background: -moz-linear-gradient(top,  #0097a7 0%, #e0f7fa 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #0097a7 0%,#e0f7fa 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #0097a7 0%,#e0f7fa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0097a7', endColorstr='#e0f7fa',GradientType=0 ); /* IE6-9 */
+}
+
+.nav a {
+  color: #bdbdbd;
+}
